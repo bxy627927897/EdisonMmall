@@ -1,8 +1,8 @@
 /*
 * @Author: Edison
 * @Date:   2017-07-31 22:44:11
-* @Last Modified by:   Edison
-* @Last Modified time: 2017-08-01 16:20:11
+* @Last Modified by:   msi-pc
+* @Last Modified time: 2017-08-06 19:39:18
 */
 
 var webpack = require('webpack');
@@ -43,6 +43,15 @@ var getHtmlConfig = function(name) {
 	 		{ test: /\.css$/, loader:  ExtractTextPlugin.extract("style-loader","css-loader") },
 	 		{ test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader:  'url-loader?limit=100&name=resource/[name].[ext]' },
 	 	]
+	 },
+	 resolve: {
+	 	alias: {
+               node_modules: __dirname + '/node_modules',
+	 		util: __dirname + '/src/util',
+	 		page: __dirname + '/src/page',
+	 		service: __dirname + '/src/service',
+	 		image: __dirname + '/src/image'
+	 	}
 	 },
      plugins: [
      // 独立通用模块到js/base.js

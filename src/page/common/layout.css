@@ -1,0 +1,96 @@
+/*
+* @Author: msi-pc
+* @Date:   2017-08-06 17:17:34
+* @Last Modified by:   msi-pc
+* @Last Modified time: 2017-08-07 00:37:58
+*/
+
+/*css reset 统一默认样式*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f6f6f6;
+	font: 12px/1.5 tahoma, arial, Microsoft YaHei, sans-serif; 
+	/*字体 行间距为1.5倍  字体从前往后匹配*/
+}
+li{
+	list-style: none;
+}
+img{
+	display: block;
+	border: none;
+}
+label{
+	cursor: pointer;
+}
+input[type='checkbox']{
+	cursor: pointer;
+}
+
+/*定宽布局*/
+.w{
+	width: 1080px;
+	margin: 0 auto; 
+	position: relative;
+	overflow: hidden;
+}
+.large .w{
+	width: 1600px;
+}
+
+/*全局通用样式*/
+
+/*隐藏类*/
+.hide{
+	display: none;
+}
+/*超级链接样式*/
+.link{
+	color: #999;
+	cursor: pointer;
+	text-decoration: none;
+}
+.link:hover{
+	color: #e80012;
+}
+.link-text{
+	color: #999;
+	text-decoration: none;
+}
+/*按钮*/
+.btn{
+	display: inline-block;
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	border: none;
+	background-color: #c60023;
+	font-size: 17px;
+	font-weight: bold;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+.btn-mini{
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	padding: 0 10px;
+}
+
+/*loading*/
+.loading{
+	margin: 10px auto;
+	display: block;
+	width: 85px;
+	height: 81px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background: url(../../image/icon/loading3.gif) no-repeat;
+	opacity: .6;
+}
+
