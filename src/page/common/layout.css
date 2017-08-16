@@ -2,7 +2,7 @@
 * @Author: msi-pc
 * @Date:   2017-08-06 17:17:34
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-08-07 00:37:58
+* @Last Modified time: 2017-08-16 12:57:44
 */
 
 /*css reset 统一默认样式*/
@@ -17,6 +17,7 @@ body{
 }
 li{
 	list-style: none;
+	/*不加前面的圆点*/
 }
 img{
 	display: block;
@@ -35,6 +36,7 @@ input[type='checkbox']{
 	margin: 0 auto; 
 	position: relative;
 	overflow: hidden;
+	/*清除浮动*/
 }
 .large .w{
 	width: 1600px;

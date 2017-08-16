@@ -2,7 +2,7 @@
 * @Author: msi-pc
 * @Date:   2017-08-07 00:27:39
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-08-07 02:27:52
+* @Last Modified time: 2017-08-16 10:08:07
 */
 
 .nav-simple{
@@ -15,6 +15,6 @@
 .nav-simple .logo{
 	font-size: 26px;
 	font-weight: bold;
-	color: #c60023;
+	color: red;
 }
 

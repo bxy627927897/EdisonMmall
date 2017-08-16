@@ -2,8 +2,10 @@
 * @Author: Edison
 * @Date:   2017-08-01 17:36:47
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-08-06 17:16:33
+* @Last Modified time: 2017-08-16 14:40:52
 */
+
+//通用工具js
 
 'use strict';
 var Hogan = require('hogan');

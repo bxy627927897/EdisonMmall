@@ -2,7 +2,7 @@
 * @Author: msi-pc
 * @Date:   2017-08-07 02:22:12
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-08-07 02:27:31
+* @Last Modified time: 2017-08-16 13:50:25
 */
 .nav{
 	background: #eee;
@@ -13,7 +13,8 @@
 .nav .user{
 	float: left;
 }
-.nav .user.login{
+.nav .user.login{  
+	/*既有user又有login*/
 	display: none;
 }
 .nav .user .link{
