@@ -2,7 +2,7 @@
 * @Author: msi-pc
 * @Date:   2017-08-07 02:22:03
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-08-16 14:22:24
+* @Last Modified time: 2017-08-17 03:21:23
 */
 
 'use strict';
@@ -25,10 +25,10 @@ var nav = {
 		});
 		//注册点击事件
 		$('.js-register').click(function() {
-			window.location.href = './register.html';
+			window.location.href = './user-register.html';
 		});
 		//退出点击事件
-		$('js-logout').click(function() {
+		$('.js-logout').click(function() {
 			_user.logout(function(res) {
 				window.location.reload();
 			}, function(errMsg) {

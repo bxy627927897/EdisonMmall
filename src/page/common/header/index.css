@@ -2,7 +2,7 @@
 * @Author: msi-pc
 * @Date:   2017-08-16 15:26:08
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-08-16 16:05:36
+* @Last Modified time: 2017-08-17 06:44:29
 */
 /*通用头部导航*/
 
@@ -14,6 +14,7 @@
 	font-size: 36px;
 	color: #c60023;
 	font-weight: bolder;
+	text-decoration: none;
 }
 
 .header .search-con{
@@ -34,4 +35,15 @@
 	position: absolute;
 	height: 44px;
 	width: 80px;
+}
+
+/*面包屑导航*/
+.crumb {
+	margin-bottom: 15px;
+	height: 50px;
+	line-height: 50px;
+	background: #eee;
+	color: #888;
+	font-size: 14px;
+	border-top: 2px solid #c60023;
 }

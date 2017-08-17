@@ -2,7 +2,7 @@
 * @Author: Edison
 * @Date:   2017-08-01 17:36:47
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-08-16 14:40:52
+* @Last Modified time: 2017-08-17 02:13:04
 */
 
 //通用工具js
@@ -65,7 +65,7 @@ var _mm = {
 		alert(msg || '哪里不对了~');
 	},
 	//字段验证，支持非空判断、手机、邮箱的判断
-	validate: function(value, type) {
+	validata: function(value, type) {
 		var value = $.trim(value);  //去空格，并且转换为字符串
 		//非空验证
 		if ('require' === type) {
@@ -83,7 +83,7 @@ var _mm = {
 	},
 	// 统一登陆处理
 	doLogin : function() {
-		window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+		window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
 	},
 	//统一跳转的方法
 	goHome: function() {

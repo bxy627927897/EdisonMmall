@@ -2,7 +2,7 @@
 * @Author: msi-pc
 * @Date:   2017-08-06 17:17:34
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-08-16 12:57:44
+* @Last Modified time: 2017-08-17 06:53:07
 */
 
 /*css reset 统一默认样式*/
@@ -38,8 +38,29 @@ input[type='checkbox']{
 	overflow: hidden;
 	/*清除浮动*/
 }
+
 .large .w{
 	width: 1600px;
+}
+
+/*panel*/
+.panel{
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+}
+
+.panel .panel-title {
+	padding: 10px;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+
+.panel .panel-body {
+	padding: 10px;
+	overflow: hidden;
 }
 
 /*全局通用样式*/

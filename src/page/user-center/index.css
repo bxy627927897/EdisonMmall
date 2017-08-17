@@ -1,0 +1,18 @@
+/*
+* @Author: msi-pc
+* @Date:   2017-08-17 06:23:27
+* @Last Modified by:   msi-pc
+* @Last Modified time: 2017-08-17 07:02:25
+*/
+
+.form-line {
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.form-line .label {
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+}

@@ -1,5 +1,4 @@
 {{#navList}}
-
 {{#isActive}}
 <li class="nav-item active">
 {{/isActive}}
