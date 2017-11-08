@@ -2,7 +2,7 @@
 * @Author: Edison
 * @Date:   2017-08-01 17:36:47
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-08-17 02:13:04
+* @Last Modified time: 2017-11-06 22:01:46
 */
 
 //通用工具js
@@ -36,7 +36,7 @@ var _mm = {
 				}
 			},
 			error: function(err) {
-				typeof param.error === 'function' && param.error(res.statusText);
+				typeof param.error === 'function' && param.error(err.statusText);
 			}
 		});
 	},

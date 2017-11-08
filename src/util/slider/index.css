@@ -1,0 +1,16 @@
+/*
+* @Author: msi-pc
+* @Date:   2017-08-26 13:07:30
+* @Last Modified by:   msi-pc
+* @Last Modified time: 2017-08-26 13:12:45
+*/
+.banner { 
+	position: relative;
+	overflow: auto; 
+}
+.banner li { 
+	list-style: none; 
+}
+.banner ul li { 
+	float: left; 
+}

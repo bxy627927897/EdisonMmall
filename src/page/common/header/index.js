@@ -2,7 +2,7 @@
 * @Author: msi-pc
 * @Date:   2017-08-16 15:25:59
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-08-16 16:05:03
+* @Last Modified time: 2017-10-22 17:32:34
 */
 
 'use strict';
@@ -13,6 +13,7 @@ var _mm = require('util/mm.js');
 var header = {
 	init : function() {
 		this.bindEvent();
+		this.onLoad();
 	},
 	onLoad : function() {
 		var keyword = _mm.getUrlParam('keyword');
