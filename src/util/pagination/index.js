@@ -2,7 +2,7 @@
 * @Author: msi-pc
 * @Date:   2017-10-22 21:25:56
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-11-06 22:17:37
+* @Last Modified time: 2017-11-30 16:18:37
 */
 'use strict';
 require('./index.css');
@@ -72,7 +72,6 @@ Pagination.prototype.getPaginationHtml = function(){
         value : this.option.nextPage,
         disabled : !this.option.hasNextPage
     });
-    console.log(option.pages);
     return _mm.renderHtml(templatePagination, {
         pageArray   : pageArray,
         pageNum     : option.pageNum,

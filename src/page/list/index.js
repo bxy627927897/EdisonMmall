@@ -2,7 +2,7 @@
 * @Author: msi-pc
 * @Date:   2017-10-22 16:12:17
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-11-06 22:19:30
+* @Last Modified time: 2017-11-30 16:37:03
 */
 
 'use strict';
@@ -23,7 +23,7 @@ var page = {
 			categoryId: _mm.getUrlParam('categoryId') || '',
 			orderBy: _mm.getUrlParam('orderBy') || 'default',
 			pageNum: _mm.getUrlParam('pageNum') || 1,
-			pageSize: _mm.getUrlParam('pageSize') || 2
+			pageSize: _mm.getUrlParam('pageSize') || 10
 		}
 	},
 	init: function() {
