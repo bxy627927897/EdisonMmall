@@ -1,36 +1,26 @@
 <div class="intro-wrap">
     <div class="p-img-con">
         <div class="main-img-con">
-            <img class="main-img" src="http://img.happymmall.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg">
+            <img class="main-img" src="{{imageHost}}{{mainImage}}" alt="{{name}}">
         </div>
         <ul class="p-img-list">
+            {{#subImages}}
             <li class="p-img-item">
-                <img class="p-img" src="http://img.happymmall.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="">
+                <img class="p-img" src="{{imageHost}}{{.}}" alt="{{name}}">
             </li>
-            <li class="p-img-item">
-                <img class="p-img" src="http://img.happymmall.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="">
-            </li>
-            <li class="p-img-item">
-                <img class="p-img" src="http://img.happymmall.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="">
-            </li>
-            <li class="p-img-item">
-                <img class="p-img" src="http://img.happymmall.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="">
-            </li>
-            <li class="p-img-item">
-                <img class="p-img" src="http://img.happymmall.com/241997c4-9e62-4824-b7f0-7425c3c28917.jpeg" alt="">
-            </li>
+            {{/subImages}}
         </ul>
     </div>
     <div class="p-info-con">
-        <h1 class="p-name">手机</h1>
-        <p class="p-subtitle">子描述</p>
+        <h1 class="p-name">{{name}}</h1>
+        <p class="p-subtitle">{{subtitle}}</p>
         <div class="p-info-item p-price-con">
             <span class="label">价格</span>
-            <span class="info">￥1111</span>
+            <span class="info">￥{{price}}</span>
         </div>
         <div class="p-info-item">
             <span class="label">库存</span>
-            <span class="info">￥1111</span>
+            <span class="info">{{stock}}</span>
         </div>
         <div class="p-info-item p-count-con">
             <span class="label">数量</span>
@@ -50,6 +40,6 @@
         </ul>
     </div>
     <div class="detail-con">
-        detail
+        {{{detail}}}
     </div>
 </div>

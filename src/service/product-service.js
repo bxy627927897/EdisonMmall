@@ -2,7 +2,7 @@
 * @Author: msi-pc
 * @Date:   2017-10-22 16:15:47
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-10-22 18:18:27
+* @Last Modified time: 2017-12-01 14:23:34
 */
 
 'use strict';
@@ -15,7 +15,15 @@ var _product = {
 		_mm.request({
 			url: _mm.getServerUrl('/product/list.do'),
 			data: listParam,
-			method: 'POST',
+			success: resolve,
+			error: reject,
+		}); 
+	},
+	// 获取商品详细信息
+	getProductDetail : function(listParam, resolve, reject) {
+		_mm.request({
+			url: _mm.getServerUrl('/product/detail.do'),
+			data: listParam,
 			success: resolve,
 			error: reject,
 		}); 
