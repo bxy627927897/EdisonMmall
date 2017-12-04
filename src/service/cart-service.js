@@ -2,7 +2,7 @@
 * @Author: msi-pc
 * @Date:   2017-08-16 14:22:35
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-12-01 16:59:20
+* @Last Modified time: 2017-12-04 22:54:30
 */
 
 'use strict';
@@ -21,6 +21,13 @@ var _cart = {
 		_mm.request({
 			url: _mm.getServerUrl('/cart/add.do'),
 			data: productInfo,
+			success: resolve,
+			error: reject,
+		});
+	},
+	getCartList: function(resolve, reject) {
+		_mm.request({
+			url: _mm.getServerUrl('/cart/list.do'),
 			success: resolve,
 			error: reject,
 		});
