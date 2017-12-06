@@ -2,7 +2,7 @@
 * @Author: msi-pc
 * @Date:   2017-12-01 17:39:33
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-12-05 23:00:25
+* @Last Modified time: 2017-12-06 16:17:05
 */
 'use strict';
 require('./index.css');
@@ -127,7 +127,7 @@ var page = {
 		});
 		$(document).on('click', '.btn-submit', function() {
 			if (_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0) {
-				window.location.href = './confirm.html';
+				window.location.href = './order-confirm.html';
 			} else {
 				_mm.errorTips('请选择商品后再提交');
 			}
