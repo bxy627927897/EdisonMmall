@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./layout/html-common.html') %>
+        <title><%= htmlWebpackPlugin.options.title%> - Edison的电商平台</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html') %>
+        <%= require('html-loader!./layout/header.html') %>
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html">MMall</a>
+                    <span>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrap w">
+            <div class="panel">
+                <h1 class="panel-title">关于本网站</h1>
+                <div class="panel-body">
+                    此网站是Edison.困的个人项目，欢迎访问。
+                    <br>
+                    项目github地址为：<a href="https://github.com/bxy627927897/EdisonMmall">https://github.com/bxy627927897/EdisonMmall</a>
+                    <p><b>项目简介：</b> 本项目是我在前端学习中为了了解在前端大型项目建设中的完整过程而实现的一款前端应用，同时也是自己的毕业设计项目。项目目的为仿造京东商城构建一套完整的电商平台。包括基础框架搭建以及通用模块设计，业务模块中包括用户模块、商品模块、购物车模块、订单模块以及支付模块。 </p>
+                    <p><b>使用技术：</b> 采用了前后端完全分离的方式进行开发和部署，使用了老师提供的后端接口，自己负责整体前端搭建。使用了分层架构的思想，把整个工程划分为逻辑层，数据层和工具层三大层级，提高系统的可扩展性和可维护性。在分层的基础上使用了模块化设计。使用了Html、Css、Javascript，使用的库为jQuery，主要用于Ajax请求和DOM操作。使用了webpack，对代码进行基于CommonJS的模块化打包集成，以及使用其依赖的NodeJs和包管理工具NPM。</p>
+                </div>
+            </div>
+        </div>
+    
+    
+    <%= require('html-loader!./layout/footer.html') %>  
+    <!-- EJS模板 -->
+
+    </body>
+</html>

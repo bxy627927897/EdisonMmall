@@ -2,7 +2,7 @@
 * @Author: Edison
 * @Date:   2017-07-31 22:44:11
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-12-07 17:40:59
+* @Last Modified time: 2017-12-08 10:36:44
 */
 
 var webpack = require('webpack');
@@ -18,6 +18,7 @@ var getHtmlConfig = function(name, title) {
 	return {
 			template: './src/view/'+ name + '.html',
      		filename: 'view/' + name + '.html',
+               favicon: './favicon.ico',
                title: title,
      		inject: true,
      		hash: true,
@@ -43,10 +44,11 @@ var getHtmlConfig = function(name, title) {
           'user-center-update' : ['./src/page/user-center-update/index.js'],
           'user-pass-update' : ['./src/page/user-pass-update/index.js'],
           'result' : ['./src/page/result/index.js'],
+          'about' : ['./src/page/about/index.js']
      },
      output: {
-         path: './dist',
-         publicPath: '/dist',
+         path: __dirname + '/dist/',
+         publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '//www.edison-kun.com/project/edisonmmall-fe/dist/',
          filename: 'js/[name].js'
      },
      externals: {
@@ -57,7 +59,14 @@ var getHtmlConfig = function(name, title) {
 	 		{ test: /\.css$/, loader:  ExtractTextPlugin.extract("style-loader","css-loader") },
 	 		{ test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader:  'url-loader?limit=100&name=resource/[name].[ext]' },
                //限制文件大小，小于100换为base64，否则以文件形式存在 加一个打包后的位置和名字
-               { test: /\.string$/, loader: 'html-loader'},
+               { 
+                    test: /\.string$/, 
+                    loader: 'html-loader',
+                    query: {
+                         minimize: true,
+                         removeAttributeQuotes: false
+                    }
+               },
 	 	]
 	 },
 	resolve: {
@@ -93,6 +102,7 @@ var getHtmlConfig = function(name, title) {
           new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改个人信息')),
           new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '修改密码')),
           new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
+          new HtmlWebpackPlugin(getHtmlConfig('about', '关于本项目'))
      ]
  };
 

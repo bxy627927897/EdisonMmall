@@ -2,7 +2,7 @@
 * @Author: msi-pc
 * @Date:   2017-12-07 17:41:20
 * @Last Modified by:   msi-pc
-* @Last Modified time: 2017-12-07 18:07:21
+* @Last Modified time: 2017-12-07 18:19:47
 */
 'use strict';
 require('./index.css');
@@ -28,7 +28,7 @@ var page = {
 				paymentHtml = '',
 				$pageWrap = $('.page-wrap');
 		$pageWrap.html('<div class="loading"></div>');
-		_order.getPaymentInfo(this.data.orderNumber, function(res) {
+		_payment.getPaymentInfo(this.data.orderNumber, function(res) {
 			paymentHtml = _mm.renderHtml(templateIndex, res);
 			$pageWrap.html(paymentHtml);
 			_this.listenOrderStatus();
